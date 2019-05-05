@@ -1,15 +1,16 @@
 import random
 
-def Owner(owner):
+def Owner(caller, owner):
     print("This company's owner name is ", owner)
-    print("Welcome to my company!! Wait a minute,please^^")
+    print(caller, "Welcome to my company!! Wait a minute,please^^")
     print("===========================================")
 def Auto_Callinginroom_System(caller, owner):
     print("Hi,",caller, "Sorry to say you this sad sentences")
     print(owner, " is calling. Will you call later,please??")
     print("===========================================")
 def Auto_Seminarinroom_System(caller, owner, whenst, room):
-    thistime = whenst + 1
+    thisticaller, owner)
+    chenfin = whenst + 2
     whenfin = whenst + 2
     print("Time Now : ", thistime)
     print("Hi,",caller, "Sorry to say you this sad sentences")
@@ -26,11 +27,10 @@ def End(caller):
     print("Ok! See you later,", caller, "~~")
 
 while (True):
-    owner = "JoSungSu"
-    Owner(owner)
+    owner(caller, owner)
     caller = str(input("What is your name, sir??"))
     print("===========================================")
-    menu = int(input("Choose what will you do with my boss?(1-meet in room, 2-checkmyproj, 3-have dish 4-end) : "))
+    menu = int(input("Choose what will you do with my boss?(1-meet in room, 2-checkmyproj, 3-have dish, 4-end) : "))
     print("===========================================")
     if (menu == 1) :
         Auto_Callinginroom_System(caller, owner)
