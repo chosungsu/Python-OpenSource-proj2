@@ -1,4 +1,5 @@
 import random
+
 def Owner(owner):
     print("This company's owner name is ", owner)
 def Auto_Callinginroom_System(caller, owner):
@@ -20,7 +21,11 @@ def Auto_Outside_System(caller, owner, whenst, where):
     print(owner, "is gone to ", where, " from ", whenst, " to ", whenfin)
     print("===========================================")
 def End(caller):
+<<<<<<< HEAD
     print("Ok! See you later,", caller, "~~")
+=======
+    print("Ok! See you later, ", caller)
+>>>>>>> 362fc31b2bbc3f6f47432a2eb1b60b23bd60453f
 
 while (True):
     owner = "JoSungSu"
