@@ -27,8 +27,8 @@ def End(caller):
     print("Ok! See you later,", caller, "~~")
 
 while (True):
-    owner(caller, owner)
     caller = str(input("What is your name, sir??"))
+    owner(caller, owner)
     print("===========================================")
     menu = int(input("Choose what will you do with my boss?(1-meet in room, 2-checkmyproj, 3-have dish, 4-end) : "))
     print("===========================================")
