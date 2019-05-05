@@ -1,9 +1,6 @@
 import random
-
 def Owner(owner):
     print("This company's owner name is ", owner)
-    print("Welcome to my company!! Wait a minute,please^^")
-    print("===========================================")
 def Auto_Callinginroom_System(caller, owner):
     print("Hi,",caller, "Sorry to say you this sad sentences")
     print(owner, " is calling. Will you call later,please??")
@@ -22,15 +19,15 @@ def Auto_Outside_System(caller, owner, whenst, where):
     print("Hi,",caller, "Sorry to say you this sad sentences")
     print(owner, "is gone to ", where, " from ", whenst, " to ", whenfin)
     print("===========================================")
-def End(caller):
-    print("Ok! See you later,", caller, "~~")
+def End():
+    print("Ok! See you later, sir~~")
 
 while (True):
     owner = "JoSungSu"
     Owner(owner)
     caller = str(input("What is your name, sir??"))
     print("===========================================")
-    menu = int(input("Choose what will you do with my boss?(1-meet in room, 2-checkmyproj, 3-have dish, 4-end) : "))
+    menu = int(input("Choose what will you do with my boss?(1-meet in room, 2-checkmyproj, 3-have dish 4-end) : "))
     print("===========================================")
     if (menu == 1) :
         Auto_Callinginroom_System(caller, owner)
@@ -53,5 +50,5 @@ while (True):
         Auto_Outside_System(caller, owner, whenst, where)
         continue
     if (menu == 4) :
-        End(caller)
+        End()
         break
