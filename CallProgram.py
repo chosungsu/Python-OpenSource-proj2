@@ -3,6 +3,7 @@ import random
 def Owner(owner):
     print("This company's owner name is ", owner)
     print("Welcome to my company!! Wait a minute,please^^")
+    print("===========================================")
 def Auto_Callinginroom_System(caller, owner):
     print("Hi,",caller, "Sorry to say you this sad sentences")
     print(owner, " is calling. Will you call later,please??")
