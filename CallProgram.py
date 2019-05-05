@@ -9,8 +9,7 @@ def Auto_Callinginroom_System(caller, owner):
     print(owner, " is calling. Will you call later,please??")
     print("===========================================")
 def Auto_Seminarinroom_System(caller, owner, whenst, room):
-    thisticaller, owner)
-    chenfin = whenst + 2
+    thistime = whenst + 1
     whenfin = whenst + 2
     print("Time Now : ", thistime)
     print("Hi,",caller, "Sorry to say you this sad sentences")
