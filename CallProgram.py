@@ -19,8 +19,8 @@ def Auto_Outside_System(caller, owner, whenst, where):
     print("Hi,",caller, "Sorry to say you this sad sentences")
     print(owner, "is gone to ", where, " from ", whenst, " to ", whenfin)
     print("===========================================")
-def End():
-    print("Ok! See you later, sir~~")
+def End(caller):
+    print("Ok! See you later,", caller, "~~")
 
 while (True):
     owner = "JoSungSu"
@@ -50,5 +50,5 @@ while (True):
         Auto_Outside_System(caller, owner, whenst, where)
         continue
     if (menu == 4) :
-        End()
+        End(caller)
         break
