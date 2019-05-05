@@ -30,7 +30,7 @@ while (True):
     Owner(owner)
     caller = str(input("What is your name, sir??"))
     print("===========================================")
-    menu = int(input("Choose what will you do with my boss?(1-meet in room, 2-checkmyproj, 3-have dish 4-end) : "))
+    menu = int(input("Choose what will you do with my boss?(1-meet in room, 2-checkmyproj, 3-have dish, 4-end) : "))
     print("===========================================")
     if (menu == 1) :
         Auto_Callinginroom_System(caller, owner)
