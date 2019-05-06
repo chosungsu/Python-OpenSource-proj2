@@ -23,7 +23,7 @@ def Auto_Outside_System(caller, owner, whenst, where):
     print(owner, "is gone to ", where, " from ", whenst, " to ", whenfin)
     print("===========================================")
 def End(caller):
-    print("Ok! See you later,", caller, "~~")
+    print("Ok! See you later, ", caller, "~~")
 
 while (True):
     owner = "Jo Sung Su"
