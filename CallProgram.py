@@ -12,7 +12,8 @@ def Auto_Callinginroom_System(caller, owner):
     answer = input()
     if (answer == "y"):
             number = input("번호 입력 : ")
-            ans2 = input("Is this your phone number??(y,n) -> ")
+            print("Is this your number??(y, n) -> ", number)
+            ans2 = input()
             if (ans2 == "y"):
                 print("Ok, Thanks! I will give your number to my boss^^")
             else:
@@ -30,7 +31,7 @@ def Auto_Seminarinroom_System(caller, owner, whenst, room):
     answer = input()
     if (answer == "y"):
             number = input("번호 입력 : ")
-            print("Is this number??(y, n) -> ", number)
+            print("Is this your number??(y, n) -> ", number)
             ans2 = input()
             if (ans2 == "y"):
                 print("Ok, Thanks! I will give your number to my boss")
@@ -49,7 +50,7 @@ def Auto_Outside_System(caller, owner, whenst, where):
     answer = input()
     if (answer == "y"):
         number = input("번호 입력 : ")
-        print("Is this number??(y, n) -> ", number)
+        print("Is this your number??(y, n) -> ", number)
         ans2 = input()
         if (ans2 == "y"):
             print("Ok, Thanks! I will give your number to my boss")
