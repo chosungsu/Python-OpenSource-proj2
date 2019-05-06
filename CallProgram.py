@@ -1,34 +1,73 @@
 import random
 
-def Owner(caller, owner):
+def Owner(caller, owner, loc):
     print("This company's owner name is ", owner)
-    print(caller, "Welcome to my company!! Wait a minute,please^^")
+    print("Our company is located in ", loc) 
+    print(caller, "Welcome to my company!! Wait a minute, please^^")
     print("===========================================")
 def Auto_Callinginroom_System(caller, owner):
     print("Hi,",caller, "Sorry to say you this sad sentences")
-    print(owner, " is calling. Will you call later,please??")
+    print(owner, " is calling in room. Will you call later,please??")
+    print("Or will you leave your phone number to him??(y, n) : ")
+    answer = input()
+    if (answer == "y"):
+            number = input("번호 입력 : ")
+            ans2 = input("Is this your phone number??(y,n) -> ")
+            if (ans2 == "y"):
+                print("Ok, Thanks! I will give your number to my boss^^")
+            else:
+                print("Sorry, I am busy now. Please call back")
+    else:
+            print("Ok! Then call later,please^^")
     print("===========================================")
 def Auto_Seminarinroom_System(caller, owner, whenst, room):
     thistime = whenst + 1
     whenfin = whenst + 2
-    print("Time Now : ", thistime)
+    print("Time now : ", thistime)
     print("Hi,",caller, "Sorry to say you this sad sentences")
     print(owner, "is in ", room, "room from ", whenst, " to ", whenfin)
+    print("Or will you leave your phone number to him??(y, n) : ")
+    answer = input()
+    if (answer == "y"):
+            number = input("번호 입력 : ")
+            print("Is this number??(y, n) -> ", number)
+            ans2 = input()
+            if (ans2 == "y"):
+                print("Ok, Thanks! I will give your number to my boss")
+            else:
+                print("Sorry I am busy now, so please call back to us")
+    else:
+            print("Ok! Then call later,please^^")
     print("===========================================")
 def Auto_Outside_System(caller, owner, whenst, where):
     thistime = whenst + 2
     whenfin = whenst + 3
-    print("Time Now : ", thistime)
+    print("Time now : ", thistime)
     print("Hi,",caller, "Sorry to say you this sad sentences")
     print(owner, "is gone to ", where, " from ", whenst, " to ", whenfin)
+    print("Or will you leave your phone number to him??(y, n) : ")
+    answer = input()
+    if (answer == "y"):
+        number = input("번호 입력 : ")
+        print("Is this number??(y, n) -> ", number)
+        ans2 = input()
+        if (ans2 == "y"):
+            print("Ok, Thanks! I will give your number to my boss")
+        else:
+            print("Sorry I am busy now, so please call back to us")
+    else:
+        print("Ok! Then call later,please^^")
     print("===========================================")
-def End(caller):
+def End(caller, loc):
     print("Ok! See you later, ", caller, "~~")
+    print("When you are free visit our company^^")
+    print("Our company is located in ", loc)
 
 while (True):
     owner = "Jo Sung Su"
     caller = str(input("What is your name, sir??"))
-    Owner(caller, owner)
+    loc = "No-Won-Gu"
+    Owner(caller, owner, loc)
     print("===========================================")
     menu = int(input("Choose what will you do with my boss?(1-meet in room, 2-checkmyproj, 3-have dish, 4-end) : "))
     print("===========================================")
@@ -53,5 +92,5 @@ while (True):
         Auto_Outside_System(caller, owner, whenst, where)
         continue
     if (menu == 4) :
-        End(caller)
+        End(caller, loc)
         break
