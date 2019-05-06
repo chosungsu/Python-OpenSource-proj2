@@ -36,7 +36,7 @@ def Auto_Seminarinroom_System(caller, owner, whenst, room):
             if (ans2 == "y"):
                 print("Ok, Thanks! I will give your number to my boss")
             else:
-                print("Sorry I am busy now, so please call back to us")
+                print("Sorry, I am busy now. Please call back")
     else:
             print("Ok! Then call later,please^^")
     print("===========================================")
@@ -55,7 +55,7 @@ def Auto_Outside_System(caller, owner, whenst, where):
         if (ans2 == "y"):
             print("Ok, Thanks! I will give your number to my boss")
         else:
-            print("Sorry I am busy now, so please call back to us")
+            print("Sorry, I am busy now. Please call back")
     else:
         print("Ok! Then call later,please^^")
     print("===========================================")
