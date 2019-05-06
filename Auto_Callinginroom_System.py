@@ -5,7 +5,8 @@ def Auto_Callinginroom_System(caller, owner):
     answer = input()
     if (answer == "y"):
             number = input("번호 입력 : ")
-            ans2 = input("Is this your phone number??(y,n) -> ", number)
+            print("Is this your number??(y, n) -> ", number)
+            ans2 = input()
             if (ans2 == "y"):
                 print("Ok, Thanks! I will give your number to my boss^^")
             else:
