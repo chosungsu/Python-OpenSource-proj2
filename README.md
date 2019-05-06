@@ -8,13 +8,19 @@
 
 # 과제 작성 언어
 
-
 ## This file is made by **python**.
 
 # 과제 브랜치 설명
 
 ## Original branch name is **master**  
-## New branch name is **Project2Py**
+## New branch name is **Project2py**
+## Change default branch ***from master to Project2py***
+
+# 실습 과제 issue 생성
+
+
+
 
 # 마무리 인사말
+
 ## Thank you^^
