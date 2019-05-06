@@ -12,7 +12,8 @@ def Auto_Outside_System(caller, owner, whenst, where):
         ans2 = input()
         if (ans2 == "y"):
             print("Ok, Thanks! I will give your number to my boss")
-        else:                                                                                           print("Sorry I am busy now, so please call back to us")
+        else:
+            print("Sorry I am busy now, so please call back to us")
     else:
         print("Ok! Then call later,please^^")
     print("===========================================")
