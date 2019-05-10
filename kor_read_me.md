@@ -141,7 +141,7 @@ pip install keras
 
 - **대체 방법:  케라스를 GitHub의 소스를 이용해 설치하기**
 
-첫번쨰로, git를 사용하여 Keras를 clone하십시오.
+첫번째로, git를 사용하여 Keras를 clone하십시오.
 
 ```sh
 git clone https://github.com/keras-team/keras.git
